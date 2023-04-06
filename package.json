@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "start": "esbuild --bundle ./src/index.jsx --outdir=dist --jsx=automatic"
+        "start": "esbuild ./src/index.jsx --outdir=dist --jsx=automatic --bundle --watch",
+        "build": "esbuild ./src/index.jsx --outdir=dist --jsx=automatic --bundle"
     },
     "dependencies": {
         "esbuild": "^0.17.15",
